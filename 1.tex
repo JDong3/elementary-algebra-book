@@ -1,6 +1,7 @@
 \documentclass{book}
 \usepackage[showframe, inner=0.75in,outer=0.5in, top=0.5in, bottom=0.5in, paperwidth=6in, paperheight=9in]{geometry}
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \begin{document}
   \newcommand{\example}{
@@ -63,9 +64,10 @@
   \stepcounter{scount}
   \stepcounter{tcount}
 
-  {\axiom Properties of Equivalence \stepcounter{tcount}\\\\
-    \noindent The following is assumed to be true for all sets $S$, for all $\alpha, \beta, \text{and}, \gamma$ in $S$.\\
-    $$\forall S, S \text{ is a set}, \forall \alpha, \beta, \gamma \in S$$\\
+  {\axiom Properties of Equivalence \stepcounter{tcount}\\
+    \noindent The following is assumed to be true for all sets $S$, for all $\alpha, \beta, \text{and}, \gamma$ in $S$.
+
+    $$\forall S, S \text{ is a set}, \forall \alpha, \beta, \gamma \in S$$
 
     \noindent An element $\alpha$ is equal to itself, this property is called reflexivity. If an element $\alpha$ is equal to an element $\beta$ then $\beta$ is also equal to $\alpha$, this property is called symmetry. If and element $\alpha$ is equivalent to an element $\beta$, and $\beta$ is also equivalent $\gamma$ then $\alpha$ is equivalent to $\gamma$, this property is called transitivity.
     \begin{align*}
@@ -75,7 +77,7 @@
     \end{align*}
   }
 
-  {\remark Well Defined Operation \stepcounter{tcount}\\\\
+  {\remark Well Defined Operation \stepcounter{tcount}\\
     \noindent An operation is said to be well defined if given the same inputs, the operation will always give the same outputs. Or symbolically,
 
     $$\forall \alpha, \beta \in S, f \text{ is an operation}, \alpha = \beta \Rightarrow f[\alpha] = f[\beta]$$
@@ -83,7 +85,7 @@
     \noindent at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.\\
   }
 
-  {\example Isolate $x$ \stepcounter{tcount}\\\\
+  {\example Isolate $x$ \stepcounter{tcount}\\
     \noindent We can apply the remark about well defined operations to manipulate our equations in the following manner.
     \begin{align}
       x + 2 & = 3\\
@@ -97,9 +99,8 @@
 
     \noindent In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.
   }
-  \pagebreak
 
-  {\example Isolate $x$ \stepcounter{tcount}\\
+  {\example Isolate $x$ \stepcounter{tcount}
     \begin{align*}
       2x & = 6\\
       \frac{1}{2} \cdot 2x & = \frac{1}{2} \cdot 6\\
@@ -107,7 +108,7 @@
     \end{align*}
   }
 
-  {\example Isolate $x$ \stepcounter{tcount}\\
+  {\example Isolate $x$ \stepcounter{tcount}
     \begin{align*}
       \frac{x}{3} & = 4\\
       \frac{x}{3} \cdot 3 & = 4 \cdot 3\\
@@ -115,7 +116,7 @@
     \end{align*}
   }
 
-  {\example Isolate $y$ \stepcounter{tcount}\\
+  {\example Isolate $y$ \stepcounter{tcount}
     \begin{align*}
       \frac{y + 2}{3} & = 4x\\
       3 \cdot \frac{y + 2}{3} & = 3 \cdot 4x\\
@@ -124,24 +125,29 @@
     \end{align*}
   }
 
-  {\example Isolate $y$ \stepcounter{tcount}\\
+  {\example Isolate $y$ \stepcounter{tcount}
     \begin{align*}
       \frac{3 - 2y}{5} - y & = x\\
       \frac{3 - 2y}{5} & = x + y\\
       3 - 2y & = 5x + 5y\\
       3 - 5x & = 7y\\
-      y = \frac{3 - 5x}{7}
+      y & = \frac{3 - 5x}{7}
     \end{align*}
   }
 
   {\remark Simplest Form \stepcounter{tcount}\\
-    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable. However that form is not simple like a single number, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.
+    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable. However that form is not simple like a single number, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.\\
   }
 
-  \pagebreak
+  {\axiom Distributitive Property of Numbers \stepcounter{tcount}\\
+    For all numbers $\alpha, \beta, \text{ and}, \gamma$, $\gamma$ when multiplied by $\alpha + \beta$ is distributed accross $\alpha$ and $\beta$ by multiplication.
 
-  {\remark lorem ipsum tater tots
-
+    \begin{align*}
+      & \forall \alpha, \beta, \gamma \in \mathbb{R}\\
+      & \gamma(\alpha + \beta) = \gamma \alpha + \gamma \beta
+    \end{align*}
   }
+
+  {\remark}
 
 \end{document}
