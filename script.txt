@@ -1,0 +1,228 @@
+Fade IN:
+
+================================================================================
+QUOTE WITH ILLUSTRATIONS
+
+fade in the quote
+play Goldberg variations aria
+
+"Things which are equal to the same thing are equal to one another" - Euclid
+
+fade out
+
+SCENE: TITLE WITH ILLUSTRATIONS
+
+fade in the title
+
+Interpretation of Elementary Algebra (Fundamentals for Higher Mathematics)
+
+end playing Goldberg variations aria
+fade out
+
+================================================================================
+NARRATING COURSE INTRODUCTION
+
+narrator: Hi, welcome to my video series on Elementary Algebra. In this series
+we will be exploring some major topic in elementary algebra, especially focusing
+on the interpretation of them because I think its very important to give meaning
+to the mathematics that you are studying, lest you miss the beauty and
+significance of the objects of our
+
+================================================================================
+NARRATING TODAYS MATERIAL
+
+narrator: Today we are going to take a look at the notion of a variable
+quantity (variable)
+
+fade in variable quantity animation
+
+narrator: an equation
+
+fade in equation animation
+
+narrator: and some methods that we can use to manipulate equations into a
+certain desired form.
+
+fade in equation manipulation animation
+fade out
+
+================================================================================
+NOTION OF A VARIABLE QUANTITY
+
+narrator: Lets begin, first off I want to introduce the notion of a variable
+quantity (also known as a variable)
+
+fade in variable animation
+
+narrator: A variable, or general quantity, is used as a placeholder for an
+actual value
+
+narrator: I am x meters and y centimeters tall
+
+fade in corresponding text
+
+narrator: There are x birds on this tree
+
+fade in animation for "x birds on this tree" fade out
+
+================================================================================
+VARIABLES IN THE CONTEXT OF AN EQUATION
+
+narrator: Variables themselves are not very interesting until they are used in
+the context of an equation
+
+fade in equation animation (x - 5 = 2)
+
+narrator: what an equation does is that it puts restrictions on which values a
+variable can take
+
+narrator: since we know that x - 5 = 2 is true, then we also know that x = 8 is
+true. It is important to remember that an equation is actually an assertion
+about something. So when we write x - 5 = 2 it is very useful to interpret it as
+"x minus 5 equals 2 is true"
+
+fade in animation for x minus 5 equals 2 is true
+
+narrator: or x - 5 IS equals to 2, remember to keep these interpretations they
+will be very helpful.
+
+fade in animation for x minus 5 IS equal to 2
+
+================================================================================
+USEFUL PROPERTY OF EQUALITY
+
+narrator: In order to work with equations we need a rule that tells us a way to
+rewirte them and still have them make sense
+
+fade in animation for property 1 of equality "Definition 1: for all x in R, for
+all f in F, x = y is true => f[x] = f[y] is true "
+
+narrator: for all real numbers x, for all functions f, if x is equal to y, then
+f applied to x is equal to f applied to y. It is actually quite easy to see why
+this property makes sense in this following example.
+
+narrator: suppose that 3 = 3 is true
+
+fade in animation for 3 = 3
+
+narrator: now a function can be interpreted as a rule for how to change an
+input, in this case our change will be +2. So by proprty of equality, we know
+that 3 + 2 = 3 + 2.
+
+fade in animation for 3 + 2 = 3 + 2
+
+narrator: then 5 = 5, which is obviously true.
+
+fade in animation for 5 = 5
+
+narrator: the idea of this rule is quite simple, if you know that two quantities
+are equal (x = y) then if you change both quantities in the exact same way, we
+will get two new equal quantities (f[x] = f[y])N
+
+fade out
+
+================================================================================
+EXAMPLE 1
+
+fade in animation for isolate x
+
+narrator: suppose that x minus 5 equals 1 is true
+
+fade in animation for "hyp: x - 5 = 1 is true"
+
+narrator: then using our property from before we know that two equal quantities,
+changing them in the extact way will give use two new equal quantities
+
+fade in animation for "x = y => f[x] = f[y]" on the side
+
+narrator: in this case the our change is adding five so, x minus 5 plus 5 is
+equal to 1 plus 5
+
+fade in animation for "x - 5 + 5 = 1 + 5"
+
+narrator: then x equal 6 is true, and so we have isolated x
+
+fade in animation for "x = 6"
+
+fade out
+
+================================================================================
+EXAMPLE 2
+
+fade in animation for isolate x
+
+narrator: suppose that 3x = 3
+
+fade in animation for hyp 3x = 3 is true
+
+narrator: then we know that 3x/3 = 3/3 by property
+
+fade in animation for 3x/3 = 3/3
+
+narrator: then x = 1 is true
+
+fade in animation for x = 1
+
+================================================================================
+EXAMPLE 3
+
+fade in animation for isolate x
+
+narrator: we can repeatedly use the property of equality to isolate x in more
+complicated cases, suppose (2x+5)/4 = 3
+
+fade in animation for hyp: (2x+5)/4 = 3 is true
+
+narrator: then 2x+5 = 12 is true
+
+fade in animation
+
+narrator: then 2x = 7 is true
+
+fade in animation for 2x = 7
+
+narrator: then x = 7/2 is true
+
+fade in animation for x = 7/2
+
+================================================================================
+EXAMPLE 4
+
+fade in animation for separate x and y onto different sides of the equality
+
+narrator: suppose (x - 2y)/2 = 1 is true
+
+fade in animation
+
+narrator: then x - 2y = 2 is true
+
+fade in animation
+
+narrator: then x = 2y + 2 is true
+
+================================================================================
+EXAMPLE 5
+
+fade in animation for write terms containing x and y on one side of the equality
+with the constant on the other side
+
+narrator: suppose (2x+3)/3=y is true
+
+fade in animation
+
+narrator: then 2x + 3 = 3y
+
+fade in animation
+
+narrator: then 2x - 3y = -3
+
+================================================================================
+practice questions
+
+x + 1 = 0
+x - 1 = 2
+2x = 1
+x/5 = 2
+(2x + 15)/3 = 2
+
+NEXT TIME ... we will be taking a look at ...
