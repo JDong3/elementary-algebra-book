@@ -2,7 +2,7 @@
 \usepackage[showframe, inner=0.75in,outer=0.5in, top=0.5in, bottom=0.5in, paperwidth=6in, paperheight=9in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
-
+% example -> general
 \begin{document}
   \newcommand{\example}{
     \noindent\textbf{Example\getcount:}
@@ -65,9 +65,9 @@
   \stepcounter{tcount}
 
   {\axiom Properties of Equivalence \stepcounter{tcount}\\
-    \noindent The following is assumed to be true for all sets $S$, for all $\alpha, \beta, \text{and}, \gamma$ in $S$.
+    \noindent The following is assumed to be true for all $\alpha, \beta, \text{and}, \gamma$ in the real numbers.
 
-    $$\forall S, S \text{ is a set}, \forall \alpha, \beta, \gamma \in S$$
+    $$\forall \alpha, \beta, \gamma \in \mathbb{R}$$
 
     \noindent An element $\alpha$ is equal to itself, this property is called reflexivity. If an element $\alpha$ is equal to an element $\beta$ then $\beta$ is also equal to $\alpha$, this property is called symmetry. If and element $\alpha$ is equivalent to an element $\beta$, and $\beta$ is also equivalent $\gamma$ then $\alpha$ is equivalent to $\gamma$, this property is called transitivity.
     \begin{align*}
@@ -80,10 +80,10 @@
   {\remark Well Defined Operation \stepcounter{tcount}\\
     \noindent An operation is said to be well defined if given the same inputs, the operation will always give the same outputs. Or symbolically,
 
-    $$\forall \alpha, \beta \in S, f \text{ is an operation}, \alpha = \beta \Rightarrow f[\alpha] = f[\beta]$$
+    $$\forall \alpha, \beta \in \mathbb{R}, f \text{ is an operation}, \alpha = \beta \Rightarrow f[\alpha] = f[\beta]$$
 
-    \noindent at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.\\
-  }
+    \noindent at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.
+  }\\
 
   {\example Isolate $x$ \stepcounter{tcount}\\
     \noindent We can apply the remark about well defined operations to manipulate our equations in the following manner.
@@ -98,9 +98,9 @@
     For those that are no convinced by the manipulation above, or how the definition of a well defined operation is related to it. Another way to interperet a well defined operation is as an operation where if you apply the operation to a single number, you should always get the same result.\\
 
     \noindent In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.
-  }
+  }\\
 
-  {\example Isolate $x$ \stepcounter{tcount}
+  {\example Isolate $x$ \stepcounter{tcount}\\
     \begin{align*}
       2x & = 6\\
       \frac{1}{2} \cdot 2x & = \frac{1}{2} \cdot 6\\
@@ -108,7 +108,7 @@
     \end{align*}
   }
 
-  {\example Isolate $x$ \stepcounter{tcount}
+  {\example Isolate $x$ \stepcounter{tcount}\\
     \begin{align*}
       \frac{x}{3} & = 4\\
       \frac{x}{3} \cdot 3 & = 4 \cdot 3\\
@@ -116,7 +116,7 @@
     \end{align*}
   }
 
-  {\example Isolate $y$ \stepcounter{tcount}
+  {\example Isolate $y$ \stepcounter{tcount}\\
     \begin{align*}
       \frac{y + 2}{3} & = 4x\\
       3 \cdot \frac{y + 2}{3} & = 3 \cdot 4x\\
@@ -125,29 +125,69 @@
     \end{align*}
   }
 
-  {\example Isolate $y$ \stepcounter{tcount}
+  {\example Isolate $y$ \stepcounter{tcount}\\
     \begin{align*}
       \frac{3 - 2y}{5} - y & = x\\
       \frac{3 - 2y}{5} & = x + y\\
       3 - 2y & = 5x + 5y\\
       3 - 5x & = 7y\\
-      y & = \frac{3 - 5x}{7}
+      y = \frac{3 - 5x}{7}
     \end{align*}
   }
 
   {\remark Simplest Form \stepcounter{tcount}\\
-    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable. However that form is not simple like a single number, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.\\
-  }
+    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable. However that form is not simple like a single number, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.
+  }\\
 
-  {\axiom Distributitive Property of Numbers \stepcounter{tcount}\\
-    For all numbers $\alpha, \beta, \text{ and}, \gamma$, $\gamma$ when multiplied by $\alpha + \beta$ is distributed accross $\alpha$ and $\beta$ by multiplication.
-
+  {\axiom Distribution \stepcounter{tcount}\\
+    For $\alpha, \beta, \gamma$ the reals, left and right multiplication is distributed over addition.
     \begin{align*}
       & \forall \alpha, \beta, \gamma \in \mathbb{R}\\
-      & \gamma(\alpha + \beta) = \gamma \alpha + \gamma \beta
+      & \alpha (\beta + \gamma) = \alpha \beta + \alpha \gamma
     \end{align*}
   }
 
-  {\remark}
+  {\remark Geometric Demonstration of Distribution \stepcounter{tcount}
+    * this is not proof\\
+    If we accept that the the area of a rectangle is its length multiplied by its width, and that its area is also the sum of the parts its made of, then it follows that multiplication is distributed over addition.
+
+    \begin{align*}
+      & \text{Area} = \alpha (\beta + \gamma), \text{ length by width}\\
+      & \text{Area} = \alpha \beta + \alpha \gamma, \text{ sum of area of parts}
+    \end{align*}
+  }
+
+  {\remark Number Line (optional) \stepcounter{tcount}\\
+    A number line is a visual tool that is able to visually represent a variable that takes on some value. It consists of a single axis, with regularly spaced markings of numbers that increase towards the right with a point on the marking on which its the variable's value.
+  }\\
+
+  {\example $x = 4$ \stepcounter{tcount}\\
+
+  }
+
+  {\remark Cartesian Plane (optional) \stepcounter{tcount}\\
+    A Cartesian plane is an extended version of a number line that is able to visually represent two variables which take on some value. It consists of two perpendicular axes, both with markings like the number line. There is a point on the intersection of the two markings that take the values of the two variables intersect.
+  }\\
+
+  {\example $x = 3 \land y = 4$ \stepcounter{tcount}\\
+    Often abbreviated as $(x, y) = (3, 4)$
+  }
+
+  {\remark Linear Equation \stepcounter{tcount}\\
+    A linear equation is an equation of the form $\alpha x + \beta y + \gamma = 0, \text{where } \alpha, \beta, \gamma$ are in the reals.
+  }\\
+
+  {\remark Linear Equation Forms \stepcounter{tcount}\\
+    "isolate y"
+    \begin{align*}
+      \alpha x + \beta y + \gamma & = 0\\
+      \beta y & = - \alpha x - \gamma\\
+      y & = -\frac{\alpha}{\beta} x - \frac{\gamma}{\beta}
+    \end{align*}
+  }
+
+  {\remark Linear Equation Represented by Cartesian Plane \stepcounter{tcount}\\
+    On a cartesian plane, a point requires the value of two variables. A linear equation is an equation of two variables, and thing to note about equations of two variables is that if you know the value of one variable, you can find out the value of the other.
+  }\\
 
 \end{document}
