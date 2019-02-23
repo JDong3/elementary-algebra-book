@@ -29,7 +29,7 @@
     \noindent\textbf{idea:}
   }
   \newcommand{\suppose}{
-    \textit{Suppose:}
+    \noindent\textit{Suppose:}
   }
   \newcommand{\supposc}{
     \hphantom{\textit{Suppose:}}
@@ -177,8 +177,8 @@
     A linear equation is an equation of the form $\alpha x + \beta y + \gamma = 0, \text{where } \alpha, \beta, \gamma$ are in the reals.
   }\\
 
-  {\remark Linear Equation Forms \stepcounter{tcount}\\
-    "isolate y"
+  {\remark Slope Intercept Form of a Linear Equation \stepcounter{tcount}\\
+    From the original form of the linear equation, we can derive the following alternate form of a linear equation.
     \begin{align*}
       \alpha x + \beta y + \gamma & = 0\\
       \beta y & = - \alpha x - \gamma\\
@@ -186,8 +186,32 @@
     \end{align*}
   }
 
+  {\remark Linear Equation Constructor (optional) \stepcounter{tcount}\\
+    Consider a contructor for linear equations
+
+    \begin{align*}
+      & \text{texttt{LinearEquation}}: \mathbb{R}^3 \mapsto \text{texttt{Equation}}\\
+      & (\alpha, \beta) \to \alpha x + \beta y + \gamma = 0
+    \end{align*}
+  }
+
   {\remark Linear Equation Represented by Cartesian Plane \stepcounter{tcount}\\
     On a cartesian plane, a point requires the value of two variables. A linear equation is an equation of two variables, and thing to note about equations of two variables is that if you know the value of one variable, you can find out the value of the other.
+
+    \suppose $\text{\texttt{LinearEquation}}(\alpha = -1, \beta = 1, \gamma = 0) \text{ which gives } -1\cdot x + 1\cdot y + 0 = 0$, is our equation
+
+    \infer $y = -\frac{-1}{1} \cdot x - \frac{0}{1}$\\
+    \infer $y = x$, is the slope intercept form of our equation\\
+
+    \suppose $x = 0$\\
+    \infer $y = 0$\\
+
+    \suppose $x = 2$\\
+    \infer $y = 2$\\
+
+    \suppose $x = 2.5$\\
+    \infer $y = 2.5$
+
   }\\
 
 \end{document}
