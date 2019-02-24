@@ -184,14 +184,25 @@
       \beta y & = - \alpha x - \gamma\\
       y & = -\frac{\alpha}{\beta} x - \frac{\gamma}{\beta}
     \end{align*}
+
+    Suppose we subsitute $\sigma = - \frac{\alpha}{\beta}, \iota = - \frac{\gamma}{\beta}$, the we can rewrite out equation as
+
+    $$y = \sigma x + \iota$$
   }
 
   {\remark Linear Equation Constructor (optional) \stepcounter{tcount}\\
     Consider a contructor for linear equations
 
     \begin{align*}
-      & \text{texttt{LinearEquation}}: \mathbb{R}^3 \mapsto \text{texttt{Equation}}\\
-      & (\alpha, \beta) \to \alpha x + \beta y + \gamma = 0
+      & \text{texttt{LinearEquation}}: \mathbb{R}^3 \mapsto \text{\texttt{Equation}}\\
+      & (\alpha, \beta, \gamma) \to \alpha x + \beta y + \gamma = 0
+    \end{align*}
+
+    which is able to construct linear equations of standard form, the following alternate constructor is able to construct linear equation of slope intercept form
+
+    \begin{align*}
+      & \text{\texttt{LinearEquation}}: \mathbb{R}^2 \mapsto \text{\texttt{Equation}}\\
+      & (\sigma, \iota) \to y = \sigma x + \iota
     \end{align*}
   }
 
@@ -210,8 +221,23 @@
     \infer $y = 2$\\
 
     \suppose $x = 2.5$\\
-    \infer $y = 2.5$
+    \infer $y = 2.5$\\
 
+    using this method we can generate the pairs of numbers required to plot on the cartesian plane, see the pairs generated using this equation create pairs that fall on a line, hence the name linear equation
+  }
+
+  % for now we will work with the slope intercept form, but will come back to interpretation of standard form
+
+  {\remark Slope \stepcounter{tcount}\\
+    Slope is a measure of how steep the a linear equation is, defined as increase in y for each increase in x\\
+
+    * increase y by 1 unit, see how much x increases
+    * take 2 points (why does this work)
+    * look at $\sigma$
+  }
+
+  {\remark Intercept \stepcounter{tcount}\\
+    where the graph intercects the axis, y intecept is in the equation, how to find x intercept?
   }
 
 \end{document}
