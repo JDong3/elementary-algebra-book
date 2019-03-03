@@ -136,7 +136,11 @@
   }
 
   {\remark Simplest Form \stepcounter{tcount}\\
-    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable. However that form is not simple like a single number, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.
+    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable.
+
+    $$y = 2x + 3, x = 15$$
+
+    However that form is not simple like a single number, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.
   }\\
 
   {\axiom Distribution \stepcounter{tcount}\\
@@ -151,6 +155,8 @@
     * this is not proof\\
     If we accept that the the area of a rectangle is its length multiplied by its width, and that its area is also the sum of the parts its made of, then it follows that multiplication is distributed over addition.
 
+    $$\text{\texttt{illustration here}}$$
+
     \begin{align*}
       & \text{Area} = \alpha (\beta + \gamma), \text{ length by width}\\
       & \text{Area} = \alpha \beta + \alpha \gamma, \text{ sum of area of parts}
@@ -162,7 +168,7 @@
   }\\
 
   {\example $x = 4$ \stepcounter{tcount}\\
-
+    $$\text{\texttt{insert illustration here}}$$
   }
 
   {\remark Cartesian Plane (optional) \stepcounter{tcount}\\
@@ -171,6 +177,8 @@
 
   {\example $x = 3 \land y = 4$ \stepcounter{tcount}\\
     Often abbreviated as $(x, y) = (3, 4)$
+
+    $$\text{\texttt{insert illustration here}}$$
   }
 
   {\remark Linear Equation \stepcounter{tcount}\\
@@ -185,7 +193,7 @@
       y & = -\frac{\alpha}{\beta} x - \frac{\gamma}{\beta}
     \end{align*}
 
-    Suppose we subsitute $\sigma = - \frac{\alpha}{\beta}, \iota = - \frac{\gamma}{\beta}$, the we can rewrite out equation as
+    Suppose we subsitute $\sigma = - \frac{\alpha}{\beta}, \iota = - \frac{\gamma}{\beta}$, then we can rewrite out equation as
 
     $$y = \sigma x + \iota$$
   }
@@ -204,6 +212,25 @@
       & \text{\texttt{LinearEquation}}: \mathbb{R}^2 \mapsto \text{\texttt{Equation}}\\
       & (\sigma, \iota) \to y = \sigma x + \iota
     \end{align*}
+  }
+
+  {\remark Substitution \stepcounter{tcount}\\
+
+    In an equation of more than one variables, we can suppose without proof that one or more variables takes on a concrete value in order to find the implied values of other variables. Consider the following equation
+
+    $$\alpha = \frac{\beta + \gamma + 5}{2}$$
+
+    from this equation, we can only find the value of variables in terms of other variables. Suppose that $\gamma = 2\beta$, then
+
+    $$\alpha = \frac{3\beta}{5}$$
+
+    Suppose that $\beta = 5$, then
+
+    $$\alpha = 3$$
+
+    So it turns out that in our original equation, if we suppose that $\gamma = 2\beta \land \beta = 5$, then $\alpha = 3$
+
+    This technique will become useful when we try to understand why equations of a certain form are called linear equations.
   }
 
   {\remark Linear Equation Represented by Cartesian Plane \stepcounter{tcount}\\
@@ -238,6 +265,11 @@
 
   {\remark Intercept \stepcounter{tcount}\\
     where the graph intercects the axis, y intecept is in the equation, how to find x intercept?
+  }
+
+  {\remark Standard Form of Linear Equation \stepcounter{tcount}
+
+
   }
 
 \end{document}
