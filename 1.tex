@@ -3,33 +3,35 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 % example -> general
+
 \begin{document}
+  \setlength{\parindent}{0pt}
   \newcommand{\example}{
-    \noindent\textbf{Example\getcount:}
+    \textbf{Example\getcount:}
   }
   \newcommand{\remark}{
-    \noindent\textbf{Remark\getcount:}
+    \textbf{Remark\getcount:}
   }
   \newcommand{\axiom}{
-    \noindent\textbf{Axiom\getcount:}
+    \textbf{Axiom\getcount:}
   }
   \newcommand{\theorem}{
-    \noindent\textbf{Theorem\getcount:}
+    \textbf{Theorem\getcount:}
   }
   \newcommand{\theorec}{
     \phantom{\textbf{Theorem:}}
   }
   \newcommand{\lemma}{
-    \noindent\textbf{Lemma\getcount:}
+    \textbf{Lemma\getcount:}
   }
   \newcommand{\lemmc}{
     \phantom{\textbf{Lemma:}}
   }
   \newcommand{\idea}{
-    \noindent\textbf{idea:}
+    \textbf{idea:}
   }
   \newcommand{\suppose}{
-    \noindent\textit{Suppose:}
+    \textit{Suppose:}
   }
   \newcommand{\supposc}{
     \hphantom{\textit{Suppose:}}
@@ -46,7 +48,6 @@
   \newcommand{\ind}{
     \phantom{\texttt{.}}
   }
-
 
   \newcounter{pcount}
   \newcounter{scount}
@@ -65,11 +66,11 @@
   \stepcounter{tcount}
 
   {\axiom Properties of Equivalence \stepcounter{tcount}\\
-    \noindent The following is assumed to be true for all $\alpha, \beta, \text{and}, \gamma$ in the real numbers.
+     The following is assumed to be true for all $\alpha, \beta, \text{and}, \gamma$ in the real numbers.
 
     $$\forall \alpha, \beta, \gamma \in \mathbb{R}$$
 
-    \noindent An element $\alpha$ is equal to itself, this property is called reflexivity. If an element $\alpha$ is equal to an element $\beta$ then $\beta$ is also equal to $\alpha$, this property is called symmetry. If and element $\alpha$ is equivalent to an element $\beta$, and $\beta$ is also equivalent $\gamma$ then $\alpha$ is equivalent to $\gamma$, this property is called transitivity.
+     An element $\alpha$ is equal to itself, this property is called reflexivity. If an element $\alpha$ is equal to an element $\beta$ then $\beta$ is also equal to $\alpha$, this property is called symmetry. If and element $\alpha$ is equivalent to an element $\beta$, and $\beta$ is also equivalent $\gamma$ then $\alpha$ is equivalent to $\gamma$, this property is called transitivity.
     \begin{align*}
       \text{(i) } & \alpha = \alpha, \text{(relexivity)}\\
       \text{(ii) } & \alpha = \beta \Rightarrow \beta = \alpha, \text{(symmetry)}\\
@@ -78,15 +79,15 @@
   }
 
   {\remark Well Defined Operation \stepcounter{tcount}\\
-    \noindent An operation is said to be well defined if given the same inputs, the operation will always give the same outputs. Or symbolically,
+     An operation is said to be well defined if given the same inputs, the operation will always give the same outputs. Or symbolically,
 
     $$\forall \alpha, \beta \in \mathbb{R}, f \text{ is an operation}, \alpha = \beta \Rightarrow f[\alpha] = f[\beta]$$
 
-    \noindent at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.
+     at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.
   }\\
 
   {\example Isolate $x$ \stepcounter{tcount}\\
-    \noindent We can apply the remark about well defined operations to manipulate our equations in the following manner.
+     We can apply the remark about well defined operations to manipulate our equations in the following manner.
     \begin{align}
       x + 2 & = 3\\
       x + 2 - 2 & = 3 - 2\\
@@ -97,7 +98,7 @@
   {\remark Interpretation of Well Defined Operation in Terms of Equation Manipulation \stepcounter{tcount}\\
     For those that are no convinced by the manipulation above, or how the definition of a well defined operation is related to it. Another way to interperet a well defined operation is as an operation where if you apply the operation to a single number, you should always get the same result.\\
 
-    \noindent In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.
+     In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.
   }\\
 
   {\example Isolate $x$ \stepcounter{tcount}\\
@@ -136,11 +137,7 @@
   }
 
   {\remark Simplest Form \stepcounter{tcount}\\
-    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable.
-
-    $$y = 2x + 3, x = 15$$
-
-    However that form is not simple like a single number, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.
+    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable, $y = 2x + 3$. However that form is not simple like a single number, $x = 15$, however, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.
   }\\
 
   {\axiom Distribution \stepcounter{tcount}\\
@@ -149,10 +146,11 @@
       & \forall \alpha, \beta, \gamma \in \mathbb{R}\\
       & \alpha (\beta + \gamma) = \alpha \beta + \alpha \gamma
     \end{align*}
-  }
+
+    Distribution is a rule that lets us rewrite an expression into an equivalent form, giving us an equation.
+  }\\
 
   {\remark Geometric Demonstration of Distribution \stepcounter{tcount}
-    * this is not proof\\
     If we accept that the the area of a rectangle is its length multiplied by its width, and that its area is also the sum of the parts its made of, then it follows that multiplication is distributed over addition.
 
     $$\text{\texttt{insert illustration here}}$$
@@ -163,11 +161,26 @@
     \end{align*}
   }
 
+  {\example Expand $3 \alpha(2 \beta + \gamma)$ \stepcounter{tcount}
+    \begin{align*}
+      3 \alpha (2 \beta + \gamma) = 6 \alpha \beta + 3 \alpha \gamma
+    \end{align*}
+  }
+
+  {\example Multiply By Distribution $12 \cdot 231$
+    \begin{align*}
+      12 \cdot 231 & = 12 (200 + 30 + 1)
+      & = 2400 + 360 + 12
+      & = 2772
+    \end{align*}
+    It turns out that long multiplication is really just distribution in disguise.
+  }\\
+
   {\remark Number Line (optional) \stepcounter{tcount}\\
     A number line is a visual tool that is able to visually represent a variable that takes on some value. It consists of a single axis, with regularly spaced markings of numbers that increase towards the right with a point on the marking on which its the variable's value.
   }\\
 
-  {\example $x = 4$ \stepcounter{tcount}\\
+  {\example $x = 4$ Plotted On A Number Line\stepcounter{tcount}\\
     $$\text{\texttt{insert illustration here}}$$
   }
 
@@ -175,7 +188,7 @@
     A Cartesian plane is an extended version of a number line that is able to visually represent two variables which take on some value. It consists of two perpendicular axes, both with markings like the number line. There is a point on the intersection of the two markings that take the values of the two variables intersect.
   }\\
 
-  {\example $x = 3 \land y = 4$ \stepcounter{tcount}\\
+  {\example $x = 3 \land y = 4$ Plotted On A Cartesian Plane \stepcounter{tcount}\\
     Often abbreviated as $(x, y) = (3, 4)$
 
     $$\text{\texttt{insert illustration here}}$$
@@ -231,12 +244,12 @@
     So it turns out that in our original equation, if we suppose that $\gamma = 2\beta \land \beta = 5$, then $\alpha = 3$
 
     This technique will become useful when we try to understand why equations of a certain form are called linear equations.
-  }
+  }\\
 
   {\remark Linear Equation Represented by Cartesian Plane \stepcounter{tcount}\\
     On a cartesian plane, a point requires the value of two variables. A linear equation is an equation of two variables, and thing to note about equations of two variables is that if you know the value of one variable, you can find out the value of the other.\\
 
-    Suppose $\sigma = 1, \iota = 1$, then
+    Suppose
 
     $$\text{\texttt{LinearEqaution}}(\sigma = 1, \iota = 1) \to y = x + 1$$
 
@@ -254,20 +267,29 @@
   % for now we will work with the slope intercept form, but will come back to interpretation of standard form
 
   {\remark Slope \stepcounter{tcount}\\
-    Slope is a measure of how steep the a linear equation is, defined as increase in y for each increase in x\\
-
-    * increase y by 1 unit, see how much x increases
-    * take 2 points (why does this work)
-    * look at $\sigma$
+    Slope is a measure of how steep the a linear equation is, defined as increase in the value of y for when x is increased by 1\\
   }
+
+  {
+
+  }
+
+  %
+  % * increase y by 1 unit, see how much x increase
+  % * take 2 points (why does this work)
+  % * look at $\sigma$
 
   {\remark Intercept \stepcounter{tcount}\\
     where the graph intercects the axis, y intecept is in the equation, how to find x intercept?
   }
 
-  {\remark Standard Form of Linear Equation \stepcounter{tcount}
+  {\remark Equation From 2 Points (Derivation)
 
-
+    $y + s = (x + 1)s + i$
   }
 
+
+  {\remark Standard Form of Linear Equation \stepcounter{tcount}
+    hello
+  }
 \end{document}
