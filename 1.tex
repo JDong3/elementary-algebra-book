@@ -5,46 +5,61 @@
 % example -> general
 
 \begin{document}
+
   \setlength{\parindent}{0pt}
+
   \newcommand{\example}{
     \textbf{Example\getcount:}
   }
+
   \newcommand{\remark}{
     \textbf{Remark\getcount:}
   }
+
   \newcommand{\axiom}{
     \textbf{Axiom\getcount:}
   }
+
   \newcommand{\theorem}{
     \textbf{Theorem\getcount:}
   }
+
   \newcommand{\theorec}{
     \phantom{\textbf{Theorem:}}
   }
+
   \newcommand{\lemma}{
     \textbf{Lemma\getcount:}
   }
+
   \newcommand{\lemmc}{
     \phantom{\textbf{Lemma:}}
   }
+
   \newcommand{\idea}{
     \textbf{idea:}
   }
+
   \newcommand{\suppose}{
     \textit{Suppose:}
   }
+
   \newcommand{\supposc}{
     \hphantom{\textit{Suppose:}}
   }
+
   \newcommand{\infer}{
     \textit{Infer:}
   }
+
   \newcommand{\infec}{
     \hphantom{\textit{Infer:}}
   }
+
   \newcommand{\getcount}{
     \arabic{pcount}.\arabic{scount}.\arabic{tcount}
   }
+
   \newcommand{\ind}{
     \phantom{\texttt{.}}
   }
@@ -83,8 +98,8 @@
 
     $$\forall \alpha, \beta \in \mathbb{R}, f \text{ is an operation}, \alpha = \beta \Rightarrow f[\alpha] = f[\beta]$$
 
-     at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.
-  }\\
+     at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.\\
+  }
 
   {\example Isolate $x$ \stepcounter{tcount}\\
      We can apply the remark about well defined operations to manipulate our equations in the following manner.
@@ -98,8 +113,8 @@
   {\remark Interpretation of Well Defined Operation in Terms of Equation Manipulation \stepcounter{tcount}\\
     For those that are no convinced by the manipulation above, or how the definition of a well defined operation is related to it. Another way to interperet a well defined operation is as an operation where if you apply the operation to a single number, you should always get the same result.\\
 
-     In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.
-  }\\
+     In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.\\
+  }
 
   {\example Isolate $x$ \stepcounter{tcount}\\
     \begin{align*}
@@ -137,8 +152,8 @@
   }
 
   {\remark Simplest Form \stepcounter{tcount}\\
-    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable, $y = 2x + 3$. However that form is not simple like a single number, $x = 15$, however, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.
-  }\\
+    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable, $y = 2x + 3$. However that form is not simple like a single number, $x = 15$, however, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.\\
+  }
 
   {\axiom Distribution \stepcounter{tcount}\\
     For $\alpha, \beta, \gamma$ the reals, left and right multiplication is distributed over addition.
@@ -147,8 +162,8 @@
       & \alpha (\beta + \gamma) = \alpha \beta + \alpha \gamma
     \end{align*}
 
-    Distribution is a rule that lets us rewrite an expression into an equivalent form, giving us an equation.
-  }\\
+    Distribution is a rule that lets us rewrite an expression into an equivalent form, giving us an equation.\\
+  }
 
   {\remark Geometric Demonstration of Distribution \stepcounter{tcount}
     If we accept that the the area of a rectangle is its length multiplied by its width, and that its area is also the sum of the parts its made of, then it follows that multiplication is distributed over addition.
@@ -173,20 +188,21 @@
       & = 2400 + 360 + 12
       & = 2772
     \end{align*}
-    It turns out that long multiplication is really just distribution in disguise.
-  }\\
+
+    It turns out that long multiplication is really just distribution in disguise.\\
+  }
 
   {\remark Number Line (optional) \stepcounter{tcount}\\
-    A number line is a visual tool that is able to visually represent a variable that takes on some value. It consists of a single axis, with regularly spaced markings of numbers that increase towards the right with a point on the marking on which its the variable's value.
-  }\\
+    A number line is a visual tool that is able to visually represent a variable that takes on some value. It consists of a single axis, with regularly spaced markings of numbers that increase towards the right with a point on the marking on which its the variable's value.\\
+  }
 
   {\example $x = 4$ Plotted On A Number Line\stepcounter{tcount}\\
     $$\text{\texttt{insert illustration here}}$$
   }
 
   {\remark Cartesian Plane (optional) \stepcounter{tcount}\\
-    A Cartesian plane is an extended version of a number line that is able to visually represent two variables which take on some value. It consists of two perpendicular axes, both with markings like the number line. There is a point on the intersection of the two markings that take the values of the two variables intersect.
-  }\\
+    A Cartesian plane is an extended version of a number line that is able to visually represent two variables which take on some value. It consists of two perpendicular axes, both with markings like the number line. There is a point on the intersection of the two markings that take the values of the two variables intersect.\\
+  }
 
   {\example $x = 3 \land y = 4$ Plotted On A Cartesian Plane \stepcounter{tcount}\\
     Often abbreviated as $(x, y) = (3, 4)$
@@ -195,8 +211,8 @@
   }
 
   {\remark Linear Equation \stepcounter{tcount}\\
-    A linear equation is an equation of the form $\alpha x + \beta y + \gamma = 0, \text{where } \alpha, \beta, \gamma$ are in the reals.
-  }\\
+    A linear equation is an equation of the form $\alpha x + \beta y + \gamma = 0, \text{where } \alpha, \beta, \gamma$ are in the reals.\\
+  }
 
   {\remark Slope Intercept Form of a Linear Equation \stepcounter{tcount}\\
     From the original form of the linear equation, we can derive the following alternate form of a linear equation.
@@ -243,8 +259,8 @@
 
     So it turns out that in our original equation, if we suppose that $\gamma = 2\beta \land \beta = 5$, then $\alpha = 3$
 
-    This technique will become useful when we try to understand why equations of a certain form are called linear equations.
-  }\\
+    This technique will become useful when we try to understand why equations of a certain form are called linear equations.\\
+  }
 
   {\remark Linear Equation Represented by Cartesian Plane \stepcounter{tcount}\\
     On a cartesian plane, a point requires the value of two variables. A linear equation is an equation of two variables, and thing to note about equations of two variables is that if you know the value of one variable, you can find out the value of the other.\\
@@ -267,10 +283,64 @@
   % for now we will work with the slope intercept form, but will come back to interpretation of standard form
 
   {\remark Slope \stepcounter{tcount}\\
-    Slope is a measure of how steep the a linear equation is, defined as increase in the value of y for when x is increased by 1\\
+    Slope is a measure of how steep the a linear equation is, defined as increase in the value of y for when x is increased by 1.\\
+
+    Positive slope is manifested as liens increasing in hight towards the right, with high positive slope being steeper. Zero slope is seen as a flat line, while negative slope has the line decrease in height towards the right.\\
+
+    $$\text{\texttt{insert figure here (positive slope, high slope, flat, and neg slope)}}$$
   }
 
-  {
+  {\example Determining The Slope of a Concrete Linear Equation \stepcounter{tcount}\\
+    We know that we can find the slope of a linear equation by increasing $x$ by 1 and finding out how much y has increased by, which is what we are going to do. Suppose
+
+    $$\text{texttt{LinearEquation}}(\sigma = 4, \iota = 3) \to y = 4x + 3$$
+
+    is our linear equation. Suppose $x$ is any number $\alpha$, then
+
+    \begin{align*}
+      y & = 4x + 3\\
+      & = 4 \alpha + 3
+    \end{align*}
+
+    now suppose $x$ is one more that before, $x = \alpha + 1$, let us call our new $y$, $y^*$ so we can differentiate between the old $y$. Then
+
+    \begin{align*}
+      y^* & = 4x + 3\\
+      & = 4(\alpha + 1) + 3\\
+      & = 4\alpha + 3 + 4\\
+      & = y + 4
+    \end{align*}
+
+    since $y^*$ is $4$ greater than $y$, and $x$ is $1$ greater in the computation of $y^*$ than $y$, by the definition of slope, we can say that the slope of our linear equation is 4.\\
+  }
+
+  {\example Determing The Slope of a General Linear Equation \stepcounter{tcount}\\
+    So far we have computed the slope of a concrete linear equation, but in order to find the slope of a general linear equation, we need to try the same experiment in our previous example, but on a general linear equation.\\
+
+    Suppose
+
+    $$\text{\texttt{LinearEquation}}(\sigma = \sigma, \iota = \iota) \to y = \sigma x + \iota$$
+
+    Suppose $x = \alpha$, then
+
+    $$y = \sigma \alpha + \iota$$
+
+    Now suppose $x$ is creased by one and $y^*$ is our new $y$, $x = \alpha + 1$, then
+
+    \begin{align*}
+      y^* & = \sigma (\alpha + 1) + \iota\\
+      & = \sigma \alpha + \iota + \sigma\\
+      & = y + \sigma
+    \end{align*}
+
+    So we have shown that given a general linear equation in slope intercept form
+
+    $$y = \sigma x + \iota$$
+
+    the slope is simply $\sigma$, the greek "sigma" stands for slope, you wouldn't guess what the greek "iota" stands for\\
+  }
+
+  {\example Slope of equation from
 
   }
 
