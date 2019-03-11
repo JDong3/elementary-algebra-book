@@ -8,6 +8,8 @@
 
   \setlength{\parindent}{0pt}
 
+  \newcommand{\qed}{\hfill\ensuremath{\square}}
+
   \newcommand{\example}{
     \textbf{Example\getcount:}
   }
@@ -54,6 +56,10 @@
 
   \newcommand{\infec}{
     \hphantom{\textit{Infer:}}
+  }
+
+  \newcommand{\proof}{
+    \textit{Proof:}
   }
 
   \newcommand{\getcount}{
@@ -370,21 +376,52 @@
       \delta x & = 3 - 1 = 2
     \end{align*}
 
-    Then it follows that $y$ increases by $4$, whenever $x$ increases by $2$, interpreted as $\frac{4}{2}$. Since our graph is linear, we have
+    Then it follows that $y$ increases by $4$ whenever $x$ increases by $2$, interpreted as $\displaystyle \frac{4}{2}$, or that y increases by $2$ whenever $x$ increases by $1$ which is our definition of slope, interpreted as $\displaystyle \sigma = \frac{2}{1} = 2$.\\\\
 
-    \begin{align*}
-      \frac{4}{2} & = \frac{4}{2} \cdot \frac{\frac{1}{2}}{\frac{1}{2}}\\
-      & = \frac{2}{1}
-    \end{align*}
-
-    Then $y$ increases by $2$ whenever $x$ increases by $1$, and the slope of the equations is $2$.
+    However we notice that we can simply get the slope from our first fraction $\displaystyle \frac{4}{2} = 2$ without the need to reduce its denominator, since by definition reduction of a fraction does not change its value.
 
     In general suppose we have two points $p = (x_0, y_0), q = (x_1, y_2)$, then
 
     \begin{align*}
       \delta y & = y_0 - y_1\\
-      \delta x & = y_0 - y_1
+      \delta x & = x_0 - x_1
     \end{align*}
+
+    to find the slope, we take the ratio of $\delta y$ to $\delta x$
+
+    \begin{align*}
+      \sigma & = \frac{\delta y}{\delta x}\\
+      & = \frac{y_0 - y_1}{x_0 - x_1}
+    \end{align*}
+  }
+
+  {\theorem Equivalent Definition of Slope (optional)  \stepcounter{tcount}
+    Slope can be equivalently defined as the ratio of the difference between the $y$ co-ordinates and the difference between the $x$ co-ordinates of two points on a line.\\\\
+
+    \proof\\
+    Suppose
+
+    \begin{align*}
+      & p = (x_0, y_0)\\
+      & q = (x_1, y_1)
+    \end{align*}
+
+    are two points that lie on a linear equation, then it follows that
+
+    \begin{align*}
+      \delta y = y_0 - y_1
+      \delta x = x_0 - x_1
+    \end{align*}
+
+    According to our first definition of slope
+
+    \begin{align*}
+      \sigma & = \frac{\frac{\delta y}{\delta x}}{\frac{\delta x}{\delta x}}\\
+      & = \frac{\frac{\delta y}{\delta x}}{1}\\
+      & = \frac{\delta y}{\delta x}
+    \end{align*}
+
+    Which is simply the ratio between the difference between the $y$ and $x$ co-ordinates of two points on a line. \qed
   }
 
   %
@@ -392,7 +429,15 @@
   % * take 2 points (why does this work)
   % * look at $\sigma$
 
-  {\remark Equation From 2 Points (Derivation)
+  {\remark Equation From Slope and Intercept
+    Suppose we are given a desired slope of $\sigma$, and y-intercept of $\iota$, and asked to construct a linear equation that meets the criteria. We can simply use our constructor
+
+    $$\text{\texttt{LinearEquation}}(\sigma = \sigma, \iota = \iota) \to y = \sigma x + \iota$$
+
+    to be sure that our equation actually has the correct slope and y-intercept, we can refer back to the theorems that we proved earlier.
+  }
+
+  {\remark Equation From 2 Points (Derivation) \stepcounter{tcount}
     $y + s = (x + 1)s + i$
   }
 
