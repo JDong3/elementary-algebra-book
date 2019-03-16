@@ -10,6 +10,22 @@
 
   \newcommand{\qed}{\hfill\ensuremath{\square}}
 
+  % linear equation constructor
+  \newcommand{\linearequationc}[2]{
+    \text{\texttt{
+        LinearEquation[sigma$= {#1}$, iota$= {#2}$]
+    }}
+  }
+
+  % linear equation result
+  \newcommand{\linearequationr}[2]{
+    y = {#1}x + {#2}
+  }
+
+  \newcommand{\linearequation}[2]{
+    \linearequationc{#1}{#2}\to \linearequationr{#1}{#2}
+  }
+
   \newcommand{\example}{
     \textbf{Example\getcount:}
   }
@@ -36,10 +52,6 @@
 
   \newcommand{\lemmc}{
     \phantom{\textbf{Lemma:}}
-  }
-
-  \newcommand{\idea}{
-    \textbf{idea:}
   }
 
   \newcommand{\suppose}{
@@ -273,7 +285,7 @@
 
     Suppose
 
-    $$\text{\texttt{LinearEqaution}}(\sigma = 1, \iota = 1) \to y = x + 1$$
+    $$\linearequation{1}{1}$$
 
     is our linear equation. We can suppose that $x$ takes on certain values, and use the subsitution method to find values of $y$.
 
@@ -294,12 +306,10 @@
     Positive slope is manifested as liens increasing in hight towards the right, with high positive slope being steeper. Zero slope is seen as a flat line, while negative slope has the line decrease in height towards the right.\\
 
     $$\text{\texttt{insert figure here (positive slope, high slope, flat, and neg slope)}}$$
-  }
 
-  {\remark Determining The Slope of a Linear Equation \stepcounter{tcount}\\
     We know that we can find the slope of a linear equation by increasing $x$ by 1 and finding out how much y has increased by, which is what we are going to do. Suppose
 
-    $$\text{texttt{LinearEquation}}(\sigma = 4, \iota = 3) \to y = 4x + 3$$
+    $$\linearequation{4}{3}$$
 
     is our linear equation. Suppose $x$ is any number $\alpha$, then
 
@@ -318,12 +328,22 @@
     \end{align*}
 
     since $y^*$ is $4$ greater than $y$, and $x$ is $1$ greater in the computation of $y^*$ than $y$, by the definition of slope, we can say that the slope of our linear equation is 4.\\
+  }
 
-    So far we have computed the slope of a concrete linear equation, but in order to find the slope of a general linear equation, we need to try the same experiment in our previous example, but on a general linear equation.\\
+  {\theorem Slope of a Linear Equation \stepcounter{tcount}\\
+    The slope of a linear equation
+
+    $$\linearequation{\sigma}{\iota}$$
+
+    is $\sigma$.\\
+
+    \proof\\
 
     Suppose
 
-    $$\text{\texttt{LinearEquation}}(\sigma = \sigma, \iota = \iota) \to y = \sigma x + \iota$$
+    $$\linearequation{\sigma}{\iota}$$
+
+    is our general linear equation
 
     Suppose $x = \alpha$, then
 
@@ -341,21 +361,36 @@
 
     $$y = \sigma x + \iota$$
 
-    the slope is simply $\sigma$, the greek "sigma" stands for slope, you wouldn't guess what the greek "iota" stands for\\
+    the slope is simply $\sigma$. \qed\\
   }
 
   {\remark Intercepts \stepcounter{tcount}\\
     The intercepts of a equation are the locations in which the graph intersecs with the y and x axis, these are known as the y and x intercepts respectively.\\
+  }
+
+  {\theorem x, and y Intercepts of a Linear Equation \stepcounter{tcount}\\
+    The $x$ and $y$ intercepts of a linear equation
+
+    $$\linearequation{\sigma}{\iota}$$
+
+    are
+
+    \begin{align*}
+      & \text{\texttt{x-intercept:}}(-\frac{\iota}{\sigma}, 0)\\
+      & \text{\texttt{y-intercept:}}(\frac{0}{\iota})
+    \end{align*}
+
+    \proof\\
 
     Suppose
 
-    $$\text{\texttt{LinearEquation}}(\sigma = \sigma, \iota = \iota) \to y = \sigma x + \iota$$
+    $$\linearequation{\sigma}{\iota}$$
 
     To find the y intercept, we need to find the location in which the graph representing the equation intersects the y axis, and that is when $x$ is $0$. So suppose that $x = 0$, then
 
     $$y = \sigma \cdot 0 + \iota = \iota$$
 
-    If you haven't figured it out yet "iota" stands for intercept (y intercept), as the y intercept of the equation occurs as $(0, \iota)$\\
+    Then the y-intercept of our equation occurs at $(0, \iota)$
 
     Similarly in order to find the x intercept, we need only to find the position of $x$ when $y$ is $0$. Supposing that $y = 0$, then
 
@@ -421,7 +456,7 @@
       & = \frac{\delta y}{\delta x}
     \end{align*}
 
-    Which is simply the ratio between the difference between the $y$ and $x$ co-ordinates of two points on a line. \qed
+    Which is simply the ratio of the difference between the $y$ and $x$ co-ordinates of two points on a line. \qed
   }
 
   %
@@ -432,7 +467,7 @@
   {\remark Equation From Slope and Intercept
     Suppose we are given a desired slope of $\sigma$, and y-intercept of $\iota$, and asked to construct a linear equation that meets the criteria. We can simply use our constructor
 
-    $$\text{\texttt{LinearEquation}}(\sigma = \sigma, \iota = \iota) \to y = \sigma x + \iota$$
+    $$\linearequation{\sigma}{\iota}$$
 
     to be sure that our equation actually has the correct slope and y-intercept, we can refer back to the theorems that we proved earlier.
   }
@@ -443,5 +478,7 @@
 
   {\remark Standard Form of Linear Equation \stepcounter{tcount}
     hello
+
+    $$\linearequation{\sigma}{\iota}$$
   }
 \end{document}
