@@ -5,11 +5,8 @@
 % example -> general
 
 \begin{document}
-
   \setlength{\parindent}{0pt}
-
   \newcommand{\qed}{\hfill\ensuremath{\square}}
-
   % linear equation constructor
   \newcommand{\linearequationc}[2]{
     \text{\texttt{
@@ -17,79 +14,97 @@
     }}
   }
 
+
   % linear equation result
   \newcommand{\linearequationr}[2]{
     y = {#1}x + {#2}
   }
 
+
   \newcommand{\linearequation}[2]{
     \linearequationc{#1}{#2}\to \linearequationr{#1}{#2}
   }
+
 
   \newcommand{\example}{
     \textbf{Example\getcount:}
   }
 
+
   \newcommand{\remark}{
     \textbf{Remark\getcount:}
   }
+
 
   \newcommand{\axiom}{
     \textbf{Axiom\getcount:}
   }
 
+
   \newcommand{\theorem}{
     \textbf{Theorem\getcount:}
   }
+
 
   \newcommand{\theorec}{
     \phantom{\textbf{Theorem:}}
   }
 
+
   \newcommand{\lemma}{
     \textbf{Lemma\getcount:}
   }
+
 
   \newcommand{\lemmc}{
     \phantom{\textbf{Lemma:}}
   }
 
+
   \newcommand{\suppose}{
     \textit{Suppose:}
   }
+
 
   \newcommand{\supposc}{
     \hphantom{\textit{Suppose:}}
   }
 
+
   \newcommand{\infer}{
     \textit{Infer:}
   }
+
 
   \newcommand{\infec}{
     \hphantom{\textit{Infer:}}
   }
 
+
   \newcommand{\proof}{
     \textit{Proof:}
   }
+
 
   \newcommand{\getcount}{
     \arabic{pcount}.\arabic{scount}.\arabic{tcount}
   }
 
+
   \newcommand{\ind}{
     \phantom{\texttt{.}}
   }
 
-  \newcounter{pcount}
-  \newcounter{scount}
-  \newcounter{tcount}
 
+  % primary counter
+  \newcounter{pcount}
+  % setup secondary counter
+  \newcounter{scount}
   \makeatletter
   \@addtoreset{scount}{pcount}
   \makeatother
-
+  % set up tertiary counter
+  \newcounter{tcount}
   \makeatletter
   \@addtoreset{tcount}{scount}
   \makeatother
@@ -111,25 +126,31 @@
     \end{align*}
   }
 
-  {\remark Well Defined Operation \stepcounter{tcount}\\
+  {\axiom Well Defined Operation \stepcounter{tcount}\\
      An operation is said to be well defined if given the same inputs, the operation will always give the same outputs. Or symbolically,
 
     $$\forall \alpha, \beta \in \mathbb{R}, f \text{ is an operation}, \alpha = \beta \Rightarrow f[\alpha] = f[\beta]$$
 
-     at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of 2 numbers.\\
+     at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of two numbers.\\
   }
 
   {\example Isolate $x$ \stepcounter{tcount}\\
      We can apply the remark about well defined operations to manipulate our equations in the following manner.
+
+     Suppose
+
+     $$x + 2 = 3$$
+
+     then
+
     \begin{align}
-      x + 2 & = 3\\
       x + 2 - 2 & = 3 - 2\\
       x & = 1
     \end{align}
   }
 
   {\remark Interpretation of Well Defined Operation in Terms of Equation Manipulation \stepcounter{tcount}\\
-    For those that are no convinced by the manipulation above, or how the definition of a well defined operation is related to it. Another way to interperet a well defined operation is as an operation where if you apply the operation to a single number, you should always get the same result.\\
+    For those that are not convinced by the manipulation above, or how the definition of a well defined operation is related to it. A way to interperet a well defined operation is as an operation which has the property of if you apply the operation to a single number, you should always get the same result.\\
 
      In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.\\
   }
@@ -167,10 +188,6 @@
       3 - 5x & = 7y\\
       y = \frac{3 - 5x}{7}
     \end{align*}
-  }
-
-  {\remark Simplest Form \stepcounter{tcount}\\
-    When we are dealing with equations with more than one variable, isolating one variable will result creating an equation in the form of a variable written in terms of another variable, $y = 2x + 3$. However that form is not simple like a single number, $x = 15$, however, there is nothing wrong with that. It just happens that the simpler form cannot contain all of the information of the original equation.\\
   }
 
   {\axiom Distribution \stepcounter{tcount}\\
@@ -299,7 +316,6 @@
   }
 
   % for now we will work with the slope intercept form, but will come back to interpretation of standard form
-
   {\remark Slope \stepcounter{tcount}\\
     Slope is a measure of how steep the a linear equation is, defined as increase in the value of y for when x is increased by 1.\\
 
@@ -430,6 +446,10 @@
     \end{align*}
   }
 
+  {\theorem Intercept From Two Points \stepcounter{tcount}
+
+  }
+
   {\theorem Equivalent Definition of Slope (optional)  \stepcounter{tcount}
     Slope can be equivalently defined as the ratio of the difference between the $y$ co-ordinates and the difference between the $x$ co-ordinates of two points on a line.\\\\
 
@@ -463,16 +483,30 @@
   % * increase y by 1 unit, see how much x increase
   % * take 2 points (why does this work)
   % * look at $\sigma$
-
   {\remark Equation From Slope and Intercept
     Suppose we are given a desired slope of $\sigma$, and y-intercept of $\iota$, and asked to construct a linear equation that meets the criteria. We can simply use our constructor
 
     $$\linearequation{\sigma}{\iota}$$
 
     to be sure that our equation actually has the correct slope and y-intercept, we can refer back to the theorems that we proved earlier.
+
+    So we find that $\sigma$ is the slope of our equation, and $\iota$ is the intercept of the equation.
   }
 
   {\remark Equation From 2 Points (Derivation) \stepcounter{tcount}
+    Suppose we have two points $p = (x_0, y_0), q = (x_1, y_1)$, and we are asked to find an equation that passes through those two points.\\
+
+    From the remark just above, we know that if we know that slope, and intercept of our target linear equation, then we can get the equation for free. So in order to find our equation in this case, we will work on trying to extract information for slope and intercept from our points $p, q$.
+
+    Suppose that
+
+    \begin{align*}
+      & p = (x_0, y_0)\\
+      & q = (x_1, y_1)
+    \end{align*}
+
+    are two points that our linear equation passes through
+
     $y + s = (x + 1)s + i$
   }
 
@@ -481,4 +515,5 @@
 
     $$\linearequation{\sigma}{\iota}$$
   }
+
 \end{document}
