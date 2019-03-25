@@ -87,7 +87,7 @@
 
 
   \newcommand{\getcount}{
-    \arabic{pcount}.\arabic{scount}.\arabic{tcount}
+    \arabic{chapter}.\arabic{scount}.\arabic{tcount}
   }
 
 
@@ -99,10 +99,10 @@
   % primary counter
   \newcounter{pcount}
   % setup secondary counter
-  \newcounter{scount}
-  \makeatletter
-  \@addtoreset{scount}{pcount}
-  \makeatother
+  \newcounter{scount}[chapter]
+  % \makeatletter
+  % \@addtoreset{scount}{pcount}
+  % \makeatother
   % set up tertiary counter
   \newcounter{tcount}
   \makeatletter
@@ -113,12 +113,23 @@
   \stepcounter{scount}
   \stepcounter{tcount}
 
+  \chapter{Preliminary}
+
+  {\remark Equivalence \stepcounter{tcount}\\
+    In elementary algebra, one of the objects of our interest are equations. In general equations are of the form
+
+    $$\text{\texttt{expession1}} = \text{\texttt{expression2}}$$
+
+    When given such an equation, it is helpful to interpret it as a judgement of truth, as in "it is true that expression1 equals expression2". From this truthful equation, our goal is to infer further truthful equations, or truthful facts about this equation.\\
+  }
+
   {\axiom Properties of Equivalence \stepcounter{tcount}\\
      The following is assumed to be true for all $\alpha, \beta, \text{and}, \gamma$ in the real numbers.
 
+     A number $\alpha$ is equal to itself. If a number $\alpha$ is equal to a beta $\beta$, then $\beta$ is also equal to $\alpha$. If a number $\alpha$ is equal to an element $\beta$, and $\beta$ is also equal $\gamma$ then $\alpha$ is equal to $\gamma$. Or symbolically,
+
     $$\forall \alpha, \beta, \gamma \in \mathbb{R}$$
 
-     An element $\alpha$ is equal to itself, this property is called reflexivity. If an element $\alpha$ is equal to an element $\beta$ then $\beta$ is also equal to $\alpha$, this property is called symmetry. If and element $\alpha$ is equivalent to an element $\beta$, and $\beta$ is also equivalent $\gamma$ then $\alpha$ is equivalent to $\gamma$, this property is called transitivity.
     \begin{align*}
       \text{(i) } & \alpha = \alpha, \text{(relexivity)}\\
       \text{(ii) } & \alpha = \beta \Rightarrow \beta = \alpha, \text{(symmetry)}\\
@@ -131,15 +142,13 @@
 
     $$\forall \alpha, \beta \in \mathbb{R}, f \text{ is an operation}, \alpha = \beta \Rightarrow f[\alpha] = f[\beta]$$
 
-     at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division of two numbers.\\
+     at the moment we will take for granted the fact that the normal operations of numbers is well defined, that is addition, subtraction, multiplication, and division applied to a number.\\
   }
 
-  {\example Isolate $x$ \stepcounter{tcount}\\
-     We can apply the remark about well defined operations to manipulate our equations in the following manner.
+  {\remark Isolating a Variable in an Equation \stepcounter{tcount}\\
+     We can apply the axiom about well defined operations to manipulate our  equations in the following manner.
 
-     Suppose
-
-     $$x + 2 = 3$$
+     Suppose $x + 2 = 3$
 
      then
 
@@ -152,7 +161,7 @@
   {\remark Interpretation of Well Defined Operation in Terms of Equation Manipulation \stepcounter{tcount}\\
     For those that are not convinced by the manipulation above, or how the definition of a well defined operation is related to it. A way to interperet a well defined operation is as an operation which has the property of if you apply the operation to a single number, you should always get the same result.\\
 
-     In step $(1)$ we know that we have two equivalent objects $x + 2$ and $3$, the well defined operation that we apply to the two equivalent objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equivalent to $3 - 2$, we collect the terms and conclude that $x$ is equivalent to $1$.\\
+     In step $(1)$ we know that we have two equal objects $x + 2$ and $3$, the well defined operation that we apply to the two equal objects is "minus 2". Since minus is well defined, we conclude that $x + 2 - 2$ is equal to $3 - 2$, we collect the terms and conclude that $x$ is equal to $1$.\\
   }
 
   {\example Isolate $x$ \stepcounter{tcount}\\
@@ -227,6 +236,8 @@
     It turns out that long multiplication is really just distribution in disguise.\\
   }
 
+  \chapter{Visualizing One and Two Variables}
+
   {\remark Number Line (optional) \stepcounter{tcount}\\
     A number line is a visual tool that is able to visually represent a variable that takes on some value. It consists of a single axis, with regularly spaced markings of numbers that increase towards the right with a point on the marking on which its the variable's value.\\
   }
@@ -244,6 +255,8 @@
 
     $$\text{\texttt{insert illustration here}}$$
   }
+
+  \chapter{Linear Equations}
 
   {\remark Linear Equation \stepcounter{tcount}\\
     A linear equation is an equation of the form $\alpha x + \beta y + \gamma = 0, \text{where } \alpha, \beta, \gamma$ are in the reals.\\
